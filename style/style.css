@@ -57,6 +57,7 @@ h3,h4,h5,h6{
 p{
     font-weight: 400;
     font-family: 'Cabin', sans-serif;
+    margin-bottom: 20px;
 }
 ul{
     list-style: none;
@@ -468,9 +469,6 @@ section.fade-out{
     border: 5px solid var(--fourth-color);
     border-radius: 5px; 
 }
-
-
-
 .project-popup{
     position: fixed;
     top: 0;
@@ -531,7 +529,7 @@ section.fade-out{
     width: 100%;
     margin: 0 auto;
 }
-.popup-body .description{
+.popup-body{
     margin-bottom: 20px;
 }
 .popup-body .general-information li{
@@ -681,10 +679,10 @@ section.fade-out{
         text-align: center;
     }
     .skills{
-        display: inline-flex;
+        display: flex;
         flex-wrap: wrap;
     }
-    .skills i{
+    .skills p{
        width: 100%;
        margin: 10px;
     }
@@ -700,6 +698,9 @@ section.fade-out{
     }
     .contact-photo img{
         max-width: 350px;
+    }
+    .popup-body .general-information li span{
+        font-size: 14px;
     }
 }
 @media only screen and (max-width: 450px){
